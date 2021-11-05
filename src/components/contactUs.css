@@ -1,0 +1,23 @@
+.first {
+  width: 40%;
+  float: left;
+  padding: 20px;
+  padding-bottom: 10px;
+  border: 2px solid red;
+}
+.second {
+  width: 40%;
+  float: left;
+  padding: 20px;
+  border: 2px solid red;
+}
+.contactMe {
+  width: 50%;
+  float: right;
+  padding: 20px;
+  border: 2px solid red;
+}
+.content {
+  /* border: 3px solid black; */
+  padding: 20px;
+}
