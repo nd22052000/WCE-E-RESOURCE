@@ -10,7 +10,7 @@ function About() {
       <div className="content">
         <h2 style={{ textAlign: "center" }}>About </h2>
         <img
-          className="wceimg"
+          className="wceimgAbout"
           src="http://1.bp.blogspot.com/-UuzDvRUXjh8/Tdxi-0uSVkI/AAAAAAAAAUU/jRfpkra_mmc/s1600/Walchand+college+of+engineering%252C+sangli+memories_Cool+AMPSS....jpg"
           alt="wce"
         />

@@ -3,8 +3,6 @@ import StudentLogin from "./StudentLogin";
 import StudentPage from "./StudentPage";
 import Resources from "./Resources";
 import UploadResource from "./UploadResource";
-import About from "./About";
-
 import ContactUs from "./ContactUs";
 import Logout from "./Logout";
 import {
@@ -13,6 +11,8 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
+import About from "./About";
+
 function App() {
   const [isStudentLogin, setStudentLogin] = useState(false);
   const [isFacultyLogin, setFacultyLogin] = useState(false);
