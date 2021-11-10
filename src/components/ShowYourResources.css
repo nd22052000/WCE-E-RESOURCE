@@ -1,21 +1,3 @@
-.showYourResources1 h4 {
-  /* float: left; */
-  width: 20%;
-  /* max-width: 25px; */
-  text-overflow: ellipsis;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.showYourResources2 {
-  /* float: left; */
-  width: 40%;
-}
-
-.showYourResources3 {
-  /* float: right; */
-  width: 40%;
-}
 td {
   height: 60px;
   padding: 0;

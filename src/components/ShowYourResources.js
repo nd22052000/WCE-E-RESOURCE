@@ -40,10 +40,11 @@ function ShowYourResourcesCode(props) {
     {
       srNO: "1",
       resourceName: props.data.resourceName,
-      view: "abc",
+      view: <a href={props.data.driveLink.webViewLink}>View Link</a>,
       delete: "abc",
-      download: "abc",
-      date: "abc"
+      download: <a href={props.data.driveLink.webContentLink}>Download Link</a>,
+      date: props.data.timestamp,
+      room: props.data.room
     }
   ];
 
@@ -53,7 +54,16 @@ function ShowYourResourcesCode(props) {
         <td style={{ textAlign: "center", width: "150px" }}>
           {resources[0].srNO}
         </td>
-        <td style={{ textAlign: "center", width: "500px" }}>
+        <td
+          style={{
+            textAlign: "center",
+            width: "300",
+            textOverflow: "ellipsis",
+            display: "inline-block",
+            overflow: "hidden",
+            whiteSpace: "nowrap"
+          }}
+        >
           {resources[0].resourceName}
         </td>
         <td style={{ textAlign: "center", width: "500px" }}>
@@ -67,6 +77,9 @@ function ShowYourResourcesCode(props) {
         </td>
         <td style={{ textAlign: "center", width: "500px" }}>
           {resources[0].date}
+        </td>
+        <td style={{ textAlign: "center", width: "500px" }}>
+          {resources[0].room}
         </td>
       </tr>
     </div>
@@ -125,6 +138,7 @@ function ShowYourResources() {
             <th style={{ textAlign: "center", width: "500px" }}>Delete</th>
             <th style={{ textAlign: "center", width: "500px" }}>Download</th>
             <th style={{ textAlign: "center", width: "500px" }}>Date</th>
+            <th style={{ textAlign: "center", width: "500px" }}>Room</th>
           </tr>
         </table>
         <br />
